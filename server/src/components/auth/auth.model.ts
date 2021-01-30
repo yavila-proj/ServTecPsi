@@ -7,6 +7,7 @@ import {
     JoinColumn,
 } from "typeorm";
 import { User } from "../user";
+import { roles } from "./types";
 
 @Entity()
 export class Login extends BaseEntity {
@@ -26,7 +27,7 @@ export class Login extends BaseEntity {
     tokenVersion: number;
 
     @Column({ default: "basic" })
-    role: string;
+    role: roles;
 
     @Column({ default: false })
     isConfirmed: boolean;

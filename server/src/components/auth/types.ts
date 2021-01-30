@@ -1,8 +1,8 @@
-export type roles = 'basic' | 'admin' | 'expert';
+export type roles = "student" | "admin";
 
 export interface IUserInfo {
-	id: string;
-	role: roles;
-	avatar: string;
-	name: string;
+    id: string;
+    role: roles;
+    avatar: string;
+    name: string;
 }
