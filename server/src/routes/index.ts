@@ -1,6 +1,6 @@
-import { Router } from 'express';
-import { authRoutes } from '../../components';
+import { Router } from "express";
+import { authRoutes } from "../components";
 
 export const router = Router();
 
-router.use('/auth', authRoutes);
+router.use("/auth", authRoutes);
